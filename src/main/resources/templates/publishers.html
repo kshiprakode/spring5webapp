@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Framework Guru</title>
+</head>
+<body>
+
+<h1>Publishers List</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+    </tr>
+    <tr th:each="publisher : ${publishers}" >
+        <td th:text ="${publisher.id}">124</td>
+        <td th:text ="${publisher.name}">Wrox</td>
+        <td th:text ="${publisher.address}">USA</td>
+    </tr>
+</table>
+
+</body>
+</html>
